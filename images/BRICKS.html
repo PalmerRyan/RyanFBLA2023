@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)http://127.0.0.1:5500/Jobs.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="./BRICKS_files/FBLACss.css">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRICKS</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+    }
+
+    h2 {
+        margin-top: 12vh;
+        color: #DA291C;
+    }
+
+    .job-container {
+        margin-bottom: 30px;
+    }
+
+    .job-title {
+        font-size: 1.2em;
+        color: #333;
+    }
+
+    .job-info {
+        margin-top: 10px;
+        color: #666;
+    }
+
+    .job-image {
+        max-width: 20%;
+        height: auto;
+        margin-top: 10px;
+    }
+</style></head>
+
+
+
+<body>
+    <header>
+        <img src="./BRICKS_files/Bricks.jpeg">
+        <nav>
+            <a href="https://ratlabstudio.com/">MERCH</a>
+            <a href="http://127.0.0.1:5500/quiz.html">Take Our Quiz</a>
+            <a href="http://127.0.0.1:5500/signUpPage.html">Apply Now</a>
+        </nav>
+    </header>
+
+    <div class="job-container">
+        <h2>1. Product Designer</h2>
+        <div class="job-title">Salary: $60,000 - $100,000+</div>
+        <div class="job-info">
+            Requirements:
+            <ul>
+                <li>Bachelor's degree in industrial design, product design, or related field.</li>
+                <li>Strong creative and artistic skills.</li>
+                <li>Proficiency in design software such as AutoCAD or SolidWorks.</li>
+                <li>Knowledge of manufacturing processes.</li>
+            </ul>
+        </div>
+        <img class="job-image" src="./BRICKS_files/ProductDesiner.jpeg" alt="Product Designer Image">
+    </div>
+
+    <footer>
+        <p>© 2023 Bricks. All rights reserved.</p>
+    </footer>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
