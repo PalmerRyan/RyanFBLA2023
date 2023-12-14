@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="FBLACss.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEGO</title>
+</head>
+
+<body>
+    <header>
+        <a href="FBLAHtml.html">
+            <img src="images/LegoLogo.png" alt="LEGO Logo">
+        </a>
+        <nav>
+            <a href="Jobs.html">Positions</a>
+            <a href="quiz.html">Take Our Quiz</a>
+            <a href="signUpPage.html" style="text-decoration: underline;">Apply Now</a>
+        </nav>
+
+        <style>
+            header{
+                background-color: rgba(255, 255, 255, 0.6);
+                box-shadow: 0 1vh 1.5vh rgba(0, 0, 0, 0.506);
+
+            }
+            body {
+                font-family: FS_ME;
+                margin: 20px;
+                background-image: url('images/LegoBackGround.png');
+                background-size: cover; 
+                background-repeat: no-repeat; 
+            }
+            form {
+                max-width: 600px;
+                margin-top: 12vh;
+                padding: 4vh;
+            }
+            label {
+                display: block;
+                margin-bottom: 8px;
+            }
+            input, select, textarea {
+                width: 100%;
+                padding: 8px;
+                margin-bottom: 16px;
+                box-sizing: border-box;
+            }
+            input[type="submit"] {
+                background-color: var(--legoRed);
+                color: white;
+                cursor: pointer;
+                border: solid 1px black;
+                border-radius: 3px;
+            }
+            input[type="submit"]:hover {
+                background-color: rgb(249, 102, 102);
+            }
+            h2{
+                margin-top: 5%;
+            }
+        </style>
+    </header>
+
+    <form action="#" method="post">
+        <h2>Job Application Form</h2>
+
+        <!-- Personal Information -->
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone">
+
+        <!-- Education -->
+        <h3>Education:</h3>
+
+        <label for="degree">Degree:</label>
+        <input type="text" id="degree" name="degree">
+
+        <label for="university">University:</label>
+        <input type="text" id="university" name="university">
+
+        <!-- Work Experience -->
+        <h3>Position You Are Applying For:</h3>
+
+        <label for="jobTitle">Title:</label>
+        <input type="text" id="jobTitle" name="jobTitle">
+
+        <label for="employer">Duration:</label>
+        <input type="text" id="employer" name="employer">
+
+        <label for="additionalInfo">Additional Information:</label>
+        <textarea id="additionalInfo" name="additionalInfo" rows="4"></textarea>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit">
+    </form>
+
+    <footer>
+        <p>&copy; 2023 LEGO. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

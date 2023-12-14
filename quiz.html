@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="FBLACss.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEGO</title>
+</head>
+
+<style>
+    body {
+        font-family: FS_ME;
+        background-image: url('images/LegoBackGround.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    header {
+        background-color: rgba(255, 255, 255, 0.6);
+        box-shadow: 0 1vh 1.5vh rgba(0, 0, 0, 0.506);
+    }
+
+    h1 {
+        font-family: FS_ME;
+        text-align: center;
+        font-size: 7vh;
+        margin-top: 16vh;
+        animation: none;
+    }
+    h2{
+        font-family: FS_ME;
+        text-align: center;
+        font-size: 2vh;
+        margin-top: .1vh;
+        animation: none;
+    }
+</style>
+
+<body>
+    <header>
+        <a href="FBLAHtml.html">
+            <img src="images/LegoLogo.png" alt="LEGO Logo">
+        </a>
+        <nav>
+            <a href="Jobs.html">Positions</a>
+            <a href="quiz.html" style="text-decoration: underline;">Take Our Quiz</a>
+            <a href="signUpPage.html">Apply Now</a>
+        </nav>
+    </header>
+
+    <h1>Career Help Quiz</h1>
+    <h2>Select The Answers That Fit You The Best.</h2>
+
+    <form id="quizForm">
+        <h3>1. Skills and Abilities:</h3>
+        <label>
+            <input type="radio" name="q1" value="a"> Communication skills
+        </label>
+        <label>
+            <input type="radio" name="q1" value="b"> Technical skills
+        </label>
+        <label>
+            <input type="radio" name="q1" value="c"> Problem-solving skills
+        </label>
+
+        <h3>2. Communication Style:</h3>
+        <label>
+            <input type="radio" name="q2" value="a"> Public speaking
+        </label>
+        <label>
+            <input type="radio" name="q2" value="b"> Written communication
+        </label>
+        <label>
+            <input type="radio" name="q2" value="c"> Behind-the-scenes work
+        </label>
+
+        <h3>3. Building Experience</h3>
+        <label>
+            <input type="radio" name="q3" value="a"> Beginner (1-10 Hours)
+        </label>
+        <label>
+            <input type="radio" name="q3" value="b"> Intermediate (60 - 100 Hours)
+        </label>
+        <label>
+            <input type="radio" name="q3" value="c"> Expert (400 - 500 Hours)
+        </label>
+
+        <h3>4. Expected Salary</h3>
+        <label>
+            <input type="radio" name="q4" value="a"> 50k-60k
+        </label>
+        <label>
+            <input type="radio" name="q4" value="b"> 70k-90k
+        </label>
+        <label>
+            <input type="radio" name="q4" value="c"> 100k+
+        </label>
+
+        <h3>5. Creativity</h3>
+        <label>
+            <input type="radio" name="q5" value="a"> Not Creative
+        </label>
+        <label>
+            <input type="radio" name="q5" value="b"> Creative At Times
+        </label>
+        <label>
+            <input type="radio" name="q5" value="c"> Very Creative
+        </label>
+
+        <h3>6. Expected Hours Per Week</h3>
+        <label>
+            <input type="radio" name="q6" value="a"> 10-20
+        </label>
+        <label>
+            <input type="radio" name="q6" value="b"> 30-40
+        </label>
+        <label>
+            <input type="radio" name="q6" value="c"> 40+
+        </label>
+
+
+        <br><br>
+        <input type="button" value="Submit" onclick="checkAnswers()">
+    </form>
+
+    <script>
+        function checkAnswers() {
+        }
+    </script>
+
+    <footer>
+        <p>&copy; 2023 LEGO. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

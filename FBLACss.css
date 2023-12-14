@@ -1,0 +1,184 @@
+:root{
+    --legoRed: #DA291C;
+    --goodblue: #0066cc;
+}
+
+@font-face {
+    font-family: FS_ME;
+    src: url('FS_Me/FS\ Me-Regular.otf');
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffcf00;
+}
+
+header nav {
+    position: absolute;
+    top: 50%;
+    right: 2%;
+    transform: translateY(-50%);
+    width: 75%;
+    text-align: right;
+}
+
+header img {
+    min-width: 64px;
+    width: 3.5%;
+    margin: 0.5%;
+    margin-left: 2%;
+    cursor: pointer;
+}
+
+header nav a {
+    margin-right: 5%;
+    color: black;
+    text-decoration: none;
+    font-family: Pro, sans-serif;
+    font-size: 1.8vh;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+    color: #be2701;
+}
+
+body {
+    background-color: white;
+}
+
+h1 {
+    font-family: FS_ME;
+    text-align: center;
+    font-size: 9vh;
+    margin-top: 35vh;
+    animation: scaleAnimation 1s ease-in-out;
+}
+
+h4{
+    margin-top: 25vh;
+    font-family: FS_ME;;
+    text-align: center;
+    font-size: 6vh;
+}
+
+@keyframes scaleAnimation {
+    from {
+        transform: scale(.8);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+p {
+    text-align: center;
+    font-family: FS_ME;
+    font-size: 3vh;
+    margin-left: 15%;
+    margin-right: 15%;
+    line-height: 2em;
+}
+
+footer p {
+    text-align: center;
+    font-size: 1.8vh;
+}
+
+body {
+    font-family: FS_ME;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    
+}
+
+h1, h3 {
+    color: #333;
+}
+
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+input[type="button"] {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="button"]:hover {
+    background-color: #2980b9;
+}
+
+.buttonLink{
+    text-align: center;
+    text-decoration: none;
+    font-family: FS_ME;
+    font-size: 1.5vh;
+    color: white;
+    background-color: black;
+    border-radius: 2vh;
+    padding: 1vh;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    transition: background-color 0.4s ease;
+}
+
+.buttonLink:hover{
+    background-color: rgb(45, 45, 45);
+}
+
+.table-container {
+    margin-top: 12vh;
+    text-align: center;
+    vertical-align: top;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.icon img{
+    width: 65vh;
+}
+
+h5{
+    font-family: FS_ME;
+    text-align: center;
+    font-size: 4.5vh;
+    margin-top: 0.2vh;
+}
+
+td p{
+    font-family: FS_ME;
+    margin-top: 1vh;
+    line-height: 1.1em;
+    font-size: 2vh;
+    margin-left: 8%;
+    margin-right: 8%;
+}
